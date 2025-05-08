@@ -1,7 +1,5 @@
-from builtins import bool, int, str
-from pathlib import Path
-from pydantic import  Field, AnyUrl, DirectoryPath
-from pydantic_settings import BaseSettings
+from pydantic import  Field, AnyUrl
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     max_login_attempts: int = Field(default=3, description="Background color of QR codes")
@@ -38,14 +36,15 @@ class Settings(BaseSettings):
     # Email settings for Mailtrap
     smtp_server: str = Field(default='smtp.mailtrap.io', description="SMTP server for sending emails")
     smtp_port: int = Field(default=2525, description="SMTP port for sending emails")
-    smtp_username: str = Field(default='your-mailtrap-username', description="Username for SMTP server")
-    smtp_password: str = Field(default='your-mailtrap-password', description="Password for SMTP server")
+    smtp_username: str = Field(default='08fdce6289c89a', description="Username for SMTP server")
+    smtp_password: str = Field(default='bcdd07eabefa39', description="Password for SMTP server")
 
 
-    class Config:
+    model_config = SettingsConfigDict(
         # If your .env file is not in the root directory, adjust the path accordingly.
-        env_file = ".env"
-        env_file_encoding = 'utf-8'
-
+        env_file = ".env",
+        env_file_encoding = 'utf-8',
+        extra = 'ignore'
+    )
 # Instantiate settings to be imported in your application
 settings = Settings()
