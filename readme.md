@@ -20,3 +20,15 @@ Description: When retrieving the user list, entering negative values for skip or
 Issue #5 - is_professional Flag Not Reflecting Update
 
 Description: Even after updating the is_professional field to true in the database, the API response continues to show it as false. This indicates a possible caching issue, serialization error, or failure to fetch the latest data from the database.
+
+# Docker Hub Repo
+Link to Docker Repo
+
+# Docker Hub Image
+
+# Docker Desktop Image
+
+# New Feature: User Profile Management
+This feature introduces the ability for users to manage and update their profile information. Additionally, it provides managers and administrators with the capability to elevate users to professional status.
+
+# What I Learned from This Project
