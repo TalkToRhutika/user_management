@@ -22,13 +22,29 @@ Issue #5 - is_professional Flag Not Reflecting Update
 Description: Even after updating the is_professional field to true in the database, the API response continues to show it as false. This indicates a possible caching issue, serialization error, or failure to fetch the latest data from the database.
 
 # Docker Hub Repo
-Link to Docker Repo
+You can view the Docker Repo [here](https://hub.docker.com/repository/docker/talktorhutika/user_management/general).
 
 # Docker Hub Image
+[![Image Alt Text](ss_1.png)]
 
 # Docker Desktop Image
+[![Image Alt Text](ss_2.png)]
 
 # New Feature: User Profile Management
 This feature introduces the ability for users to manage and update their profile information. Additionally, it provides managers and administrators with the capability to elevate users to professional status.
 
+Check out the [User Profile Feature][profile-feature].
+[profile-feature]: https://github.com/TalkToRhutika/user_management/tree/new_feature
+
+1. Update User Profile
+[![Image Alt Text](ss_3.png)]
+
+1. Update User's Professional Status
+[![Image Alt Text](ss_4.png)]
+
 # What I Learned from This Project
+This project gave me hands-on experience with real-world software development, especially within the context of user management systems. I learned how to work effectively in a collaborative team environment—contributing to feature development, resolving bugs, and maintaining code quality.
+
+By implementing new functionality, I followed industry-standard practices for coding, testing, and documentation. I also improved test coverage by identifying gaps and writing additional tests to handle edge cases and potential failures.
+
+Additionally, I gained practical experience with essential development tools such as Git for version control, Docker for containerized deployment, and CI pipelines for automated testing. Debugging and troubleshooting throughout the project further sharpened my problem-solving skills. Overall, this experience strengthened both my technical capabilities and my understanding of professional development workflows.
