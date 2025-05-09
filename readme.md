@@ -25,22 +25,27 @@ Description: Even after updating the is_professional field to true in the databa
 You can view the Docker Repo [here](https://hub.docker.com/repository/docker/talktorhutika/user_management/general).
 
 # Docker Hub Image
-[![Image Alt Text](ss_1.png)]
+![Image Alt Text](ss_1.png)
 
 # Docker Desktop Image
-[![Image Alt Text](ss_2.png)]
+![Image Alt Text](ss_2.png)
 
 # New Feature: User Profile Management
 This feature introduces the ability for users to manage and update their profile information. Additionally, it provides managers and administrators with the capability to elevate users to professional status.
 
-Check out the [User Profile Feature][profile-feature].
+Check out the [User Profile Feature][profile-feature] for more details on the implementation.
+
 [profile-feature]: https://github.com/TalkToRhutika/user_management/tree/new_feature
 
-1. Update User Profile
-[![Image Alt Text](ss_3.png)]
+### 1. Update User Profile
+This screen allows users to update their personal profile information such as bio, nickname, and more.
 
-1. Update User's Professional Status
-[![Image Alt Text](ss_4.png)]
+![User Profile Update Screenshot](ss_3.png)
+
+### 2. Update User's Professional Status
+This screen allows admins/managers to promote users to professional status.
+
+![Update Professional Status Screenshot](ss_4.png)
 
 # What I Learned from This Project
 This project gave me hands-on experience with real-world software development, especially within the context of user management systems. I learned how to work effectively in a collaborative team environment—contributing to feature development, resolving bugs, and maintaining code quality.
